@@ -10,11 +10,10 @@ public class TestImport {
         int itemNum =num.nextInt();
 
         String [] shopitem = new String[itemNum];
-
+        System.out.println("enter your item with respect to your itemNum"+" "+itemNum);
         for (int i=0; i<shopitem.length; i++ ){
             Scanner item = new Scanner(System.in);
-            System.out.println("enter your item with respect to your itemNum"+" "+itemNum);
-            shopitem[i]=item.next();
+            shopitem[i]=item.nextLine();
         }
 
         System.out.println(Arrays.toString(shopitem));
